@@ -39,3 +39,6 @@ select count (City) as Number_of_Employee, City  from AddressBook  group by City
 
 select * from AddressBook order by FirstName;
 select * from AddressBook order by City, FirstName;
+
+
+Alter table AddressBook Add Family varchar(20),Friends varchar(20), Profession varchar(50);
