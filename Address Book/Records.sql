@@ -17,3 +17,9 @@ Email varchar(50),
 
 select * from AddressBook   --Display Data
 
+
+insert into AddressBook values('Gyanendra', 'Pratap', 'D12/25 New Gate', 'Rewa', 'M.P', 486001, 7474747474,'abc@gmail.com')  
+insert into AddressBook values('Mohan', 'Singh', 'D11/25 New Gate', 'Rewa', 'M.P', 486001, 7575747474,'def@gmail.com')
+insert into AddressBook values('Rohan', 'Tiwari', 'D10/26 New Gate', 'Rewa', 'M.P', 486001, 7676747474,'ghi@gmail.com')
+
+
