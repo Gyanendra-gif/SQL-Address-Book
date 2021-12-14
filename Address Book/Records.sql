@@ -26,4 +26,7 @@ insert into AddressBook values('Rohan', 'Tiwari', 'D10/26 New Gate', 'Rewa', 'M.
 Update AddressBook set FirstName = 'Sohan' where FirstName = 'Gyanendra' -- Update Contact with Name
 
 
-Delete from AddressBook Where FirstName = 'Sohan'
+Delete from AddressBook Where FirstName = 'Sohan' -- Delete Particular Data
+
+
+select * from AddressBook where City='Rewa';
