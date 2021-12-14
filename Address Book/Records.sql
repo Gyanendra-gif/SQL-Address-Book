@@ -30,3 +30,8 @@ Delete from AddressBook Where FirstName = 'Sohan' -- Delete Particular Data
 
 
 select * from AddressBook where City='Rewa';
+select * from AddressBook where State='M.P';
+
+
+select count (City) as NumberOfCity from AddressBook;
+select count (City) as Number_of_Employee, City  from AddressBook  group by City;
