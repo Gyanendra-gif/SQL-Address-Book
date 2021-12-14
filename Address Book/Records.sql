@@ -35,3 +35,7 @@ select * from AddressBook where State='M.P';
 
 select count (City) as NumberOfCity from AddressBook;
 select count (City) as Number_of_Employee, City  from AddressBook  group by City;
+
+
+select * from AddressBook order by FirstName;
+select * from AddressBook order by City, FirstName;
