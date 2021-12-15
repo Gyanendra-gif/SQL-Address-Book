@@ -34,11 +34,27 @@ select * from AddressBook where State='M.P';
 
 
 select count (City) as NumberOfCity from AddressBook;
-select count (City) as Number_of_Employee, City  from AddressBook  group by City;
+select count (City) as NumberOfEmployee, City  from AddressBook  group by City;
 
 
-select * from AddressBook order by FirstName;
+select * from AddressBook where City = 'Rewa' order by (FirstName) ;
 select * from AddressBook order by City, FirstName;
 
 
 Alter table AddressBook Add Family varchar(20),Friends varchar(20), Profession varchar(50);
+
+
+select count (FirstName) as NumberOfContactPerson from AddressBook;
+
+
+UPDATE AddressBook set Family = 'yes' where FirstName='Sohan' ;
+UPDATE AddressBook set Friends = 'yes' where FirstName='Sohan' ;
+
+
+create table Contact (id int identity (1,1) primary key, CityName varchar(20))
+select * from Contact
+
+Alter table AddressBook Add CityId int foreign key references Contact(id);
+
+insert into Contact values ('Satna')
+insert into Contact values ('Jabalpur')
